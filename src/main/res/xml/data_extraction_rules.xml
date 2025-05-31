@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<data-extraction-rules>
+    <!-- TODO: Remove the following "include" and "exclude" elements - they are
+         örnek olarak verilmiştir. İhtiyaçlarınıza göre cihazdan cihaza aktarım için
+         dahil edilecek ve hariç tutulacak kuralları belirtin.
+         Daha fazla bilgi için https://developer.android.com/guide/topics/data/data-extraction-rules adresini ziyaret edin. -->
+    <cloud-backup>
+        <include domain="sharedpref" path="."/>
+        <exclude domain="database" path="."/>
+    </cloud-backup>
+    <device-transfer>
+        <include domain="sharedpref" path="."/>
+        <exclude domain="database" path="."/>
+    </device-transfer>
+</data-extraction-rules>
